@@ -73,3 +73,30 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
+
+// Reveal sections as they enter the viewport.
+const revealElements = document.querySelectorAll(
+  ".home .content, .home .image, .about .content, .experience .container, .skills .skill-box, .education .education-box, .contact .contact-item, .contact .social-links",
+);
+
+revealElements.forEach((element) => element.classList.add("reveal-on-scroll"));
+
+const revealObserver = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("revealed");
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.15,
+    rootMargin: "0px 0px -40px 0px",
+  },
+);
+
+revealElements.forEach((element, index) => {
+  element.style.transitionDelay = `${Math.min(index * 40, 240)}ms`;
+  revealObserver.observe(element);
+});

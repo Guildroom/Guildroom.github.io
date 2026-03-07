@@ -1,51 +1,407 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gusti Komang Bramanda Bagaskara - Software Engineer</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bramanda Bagaskara</title>
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <body>
+    <header>
+      <a class="logo"> Bramanda</a>
 
-</head>
-
-<body>
-  <header>
-    <a class="logo"> Bramanda</a>
-
-    <div id="menu" class="fas fa-bars"></div>
-    <nav class="navbar">
-      <ul>
-        <li><a class="active" href="#home">Home</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="home" id="home">
-    <div class="content">
-      <h2>Hi There,<br /> I'm Bramanda <span>Bagaskara</span></h2>
-      <p>i am Web Developer / Software Engineer</p>
-      <a class="btn"><span>Contact me</span>
-        <i class="fas fa-arrow-circle-down"></i>
-      </a>
-      <div class="socials">
-        <ul class="social-icons">
-          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/bramanda-bagaskara-02b4b9172/"
-              target="_blank"><i class="fab fa-linkedin"></i></a></li>
-          <li><a class="github" aria-label="GitHub" href="https://github.com/Guildroom" target="_blank"><i
-                class="fab fa-github"></i></a></li>
-          <li><a class="wa" aria-label="wa" href="https://wa.me/+6282235274223" target="_blank"><i
-                class="fab fa-whatsapp"></i></a></li>
+      <div id="menu" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
-    </div>
-    <div class="image">
-      <img draggable="false" class="tilt" src="./assets/images/hero.jpg" alt="">
-    </div>
-  </section>
-</body>
+      </nav>
+    </header>
 
+    <div class="wrapper">
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+    </div>
+
+    <section class="home" id="home">
+      <div class="content">
+        <h2>
+          Hi There,<br />
+          I'm <span>Bramanda Bagaskara</span>
+        </h2>
+        <p>I am a <span>Software Engineer</span></p>
+        <a href="#contact" class="btn"
+          ><span>Contact me</span>
+          <i class="fas fa-arrow-circle-down"></i>
+        </a>
+        <div class="socials">
+          <ul class="social-icons">
+            <li>
+              <a
+                class="linkedin"
+                aria-label="LinkedIn"
+                href="https://www.linkedin.com/in/bramanda-bagaskara-02b4b9172/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="github"
+                aria-label="GitHub"
+                href="https://github.com/Guildroom"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="wa"
+                aria-label="wa"
+                href="https://wa.me/+6282235274223"
+                target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="image">
+        <img
+          draggable="false"
+          class="tilt"
+          src="./assets/images/hero.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <h2 class="heading">About <span>Me</span></h2>
+      <div class="row">
+        <div class="content">
+          <h3>I'm Bramanda Bagaskara</h3>
+          <p>
+            A passionate Software Engineer based in Indonesia with extensive
+            experience in frontend development. I specialize in building
+            high-performance web applications using modern technologies like
+            React.js, Redux, and Node.js.
+          </p>
+          <p>
+            Currently lasr worked as an SDE-2 Frontend Developer at AwanTunai,
+            where I've successfully delivered 20+ features, optimized critical
+            components for 40% faster load times, and improved overall user
+            engagement by 15%.
+          </p>
+          <div class="info">
+            <div class="box">
+              <span>Email :</span>
+              <span>bramandabagaskara01@gmail.com</span>
+            </div>
+            <div class="box">
+              <span>Phone :</span>
+              <span>+6282235274223</span>
+            </div>
+            <div class="box">
+              <span>Location :</span>
+              <span>Indonesia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+      <h2 class="heading">Work <span>Experience</span></h2>
+      <div class="timeline">
+        <div class="container right">
+          <div class="content">
+            <div class="tag">
+              <h2>AwanTunai</h2>
+            </div>
+            <div class="desc">
+              <h3>SDE-2 Frontend Developer</h3>
+              <p class="date">March 2025 – February 2026</p>
+              <ul>
+                <li>
+                  Owned the end-to-end development of major feature modules,
+                  resulting in a 15% increase in user engagement.
+                </li>
+                <li>
+                  Optimized critical component rendering, leading to a 40%
+                  reduction in load time for key user workflows.
+                </li>
+                <li>
+                  Introduced and standardized state management patterns with
+                  Redux, decreasing bug reports related to data flow by 30%.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container left">
+          <div class="content">
+            <div class="tag">
+              <h2>AwanTunai</h2>
+            </div>
+            <div class="desc">
+              <h3>SDE-1 Frontend Developer</h3>
+              <p class="date">April 2023 - March 2025</p>
+              <ul>
+                <li>
+                  Implemented 20+ frontend features and components using
+                  React.js, Redux, and React Router, delivering all projects on
+                  schedule.
+                </li>
+                <li>
+                  Resolved 50+ production bugs, improving site stability and
+                  customer satisfaction.
+                </li>
+                <li>
+                  Participated in all Agile/Scrum ceremonies and contributed to
+                  a collaborative team environment using Git.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container right">
+          <div class="content">
+            <div class="tag">
+              <h2>AwanTunai</h2>
+            </div>
+            <div class="desc">
+              <h3>Software Engineer Intern</h3>
+              <p class="date">August 2022 - April 2023</p>
+              <ul>
+                <li>
+                  Involved in the development, documentation, unit test, and
+                  integration test of AwanBiz, AwanTunai's Website for supplier
+                  use.
+                </li>
+                <li>
+                  Experience with the React.js library and its ecosystem (such
+                  as Redux, React Router, and others).
+                </li>
+                <li>
+                  Troubleshooted and debugged issues to ensure smooth and stable
+                  operation of the web applications.
+                </li>
+                <li>
+                  Experience with Git and Agile development methodologies.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container left">
+          <div class="content">
+            <div class="tag">
+              <h2>Imperial Healthtech</h2>
+            </div>
+            <div class="desc">
+              <h3>Software Engineer Intern</h3>
+              <p class="date">January 2022 - April 2022</p>
+              <ul>
+                <li>
+                  Involved in the development, documentation, unit test, and
+                  integration test of BukuBumil, Imperial Healthtech's mobile
+                  app.
+                </li>
+                <li>
+                  Create a feature to help expectant mothers track their baby's
+                  movements throughout the third trimester and recognize changes
+                  through history logs.
+                </li>
+                <li>Work with team to fix bug and testing application.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <h2 class="heading">My <span>Skills</span></h2>
+      <div class="container">
+        <div class="row">
+          <div class="skill-box">
+            <div class="title">Frontend</div>
+            <div class="skill-list">
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">ReactJS</span>
+              <span class="skill-tag">Redux</span>
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">React Router</span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="title">Backend & Database</div>
+            <div class="skill-list">
+              <span class="skill-tag">NodeJS</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Python</span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="title">Mobile Development</div>
+            <div class="skill-list">
+              <span class="skill-tag">Flutter</span>
+              <span class="skill-tag">Dart</span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="title">Tools & Methodologies</div>
+            <div class="skill-list">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Agile/Scrum</span>
+              <span class="skill-tag">Unit Testing</span>
+              <span class="skill-tag">Integration Testing</span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="title">Languages</div>
+            <div class="skill-list">
+              <span class="skill-tag">English (C2 Proficient)</span>
+              <span class="skill-tag">Indonesian (Native)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+      <h2 class="heading">My <span>Education</span></h2>
+      <div class="education-content">
+        <div class="education-box">
+          <div class="education-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="education-info">
+            <h3>Bachelor of Computer Science</h3>
+            <h4>Gadjah Mada University</h4>
+            <p class="location">Yogyakarta, Indonesia</p>
+          </div>
+        </div>
+        <div class="education-box">
+          <div class="education-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <div class="education-info">
+            <h3>EF SET English Certificate</h3>
+            <h4>Score: 77/100 (C2 Proficient)</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <a href="mailto:bramandabagaskara01@gmail.com"
+                >bramandabagaskara01@gmail.com</a
+              >
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h3>Phone</h3>
+              <a href="tel:+6282235274223">+62 822 3527 4223</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Location</h3>
+              <p>Indonesia</p>
+            </div>
+          </div>
+        </div>
+        <div class="social-links">
+          <h3>Connect with me</h3>
+          <div class="socials">
+            <a
+              href="https://www.linkedin.com/in/bramanda-bagaskara-02b4b9172/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/Guildroom"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://wa.me/+6282235274223"
+              target="_blank"
+              aria-label="WhatsApp"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a
+              href="https://guildroom.github.io/"
+              target="_blank"
+              aria-label="Portfolio"
+            >
+              <i class="fas fa-globe"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Bramanda Bagaskara. All rights reserved.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
 </html>

@@ -1,3 +1,20 @@
+// Position background dots randomly
+function positionDots() {
+  const wrapper = document.querySelector(".wrapper");
+  const dots = wrapper.querySelectorAll("div");
+
+  dots.forEach((dot) => {
+    const randomX = Math.random() * window.innerWidth;
+    const randomY = Math.random() * window.innerHeight;
+    dot.style.left = randomX + "px";
+    dot.style.top = randomY + "px";
+  });
+}
+
+// Position dots on load and window resize
+window.addEventListener("load", positionDots);
+window.addEventListener("resize", positionDots);
+
 // Hamburger menu toggle
 const menu = document.querySelector("#menu");
 const navbar = document.querySelector(".navbar");
